@@ -9,67 +9,98 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a; /* Dark gray-black */
-            color: #ff3333; /* Bright red text */
+            background-color: #1a1a1a; /* Black background */
+            color: #ffffff; /* White text for contrast */
+        }
+        /* Hero Section */
+        .hero {
+            background-color: #ff3333; /* Red background */
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #ffffff; /* White text */
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            color: #1a1a1a; /* Black subtext */
+            margin: 10px 0 20px;
+        }
+        .hero .cta-button {
+            background-color: #1a1a1a; /* Black button */
+            color: #ff3333; /* Red text */
+            padding: 15px 40px;
+            border: 2px solid #ffffff; /* White border */
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .hero .cta-button:hover {
+            background-color: #ffffff; /* White on hover */
+            color: #ff3333; /* Red text */
+        }
+        /* Content Section */
+        .content {
+            padding: 50px 20px;
             text-align: center;
         }
-        .container {
-            padding: 50px;
+        .content h2 {
+            font-size: 32px;
+            color: #ff3333; /* Red heading */
+            margin-bottom: 20px;
         }
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+        .content p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 30px;
         }
-        p {
-            font-size: 20px;
-            color: #ffffff; /* White for contrast */
-            margin-bottom: 40px;
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .button {
+        .content .button {
             background-color: #ff3333; /* Red buttons */
             color: #ffffff; /* White text */
             padding: 15px 30px;
             border: none;
             border-radius: 5px;
             font-size: 18px;
-            margin: 10px;
-            cursor: pointer;
             text-decoration: none;
             display: inline-block;
         }
-        .button:hover {
+        .content .button:hover {
             background-color: #cc0000; /* Darker red on hover */
-        }
-        .hero-image {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .icon {
-            width: 50px;
-            height: 50px;
-            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Hero Image with AML Shield -->
-        <img src="./aml-shield.png" alt="AML Shield Protecting Euros and Bank" class="hero-image">
-        
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="./aml-shield.png" alt="AML Shield Protecting Euros and Bank">
         <h1>AML Force</h1>
-        <p>Stopping Financial Crime, One Step at a Time</p>
-        
-        <!-- Icon Placeholders (unchanged for now) -->
-        <div>
-            <img src="https://via.placeholder.com/50.png?text=Learn" alt="Learn Icon" class="icon">
-            <img src="https://via.placeholder.com/50.png?text=Join" alt="Join Icon" class="icon">
-            <img src="https://via.placeholder.com/50.png?text=Contact" alt="Contact Icon" class="icon">
+        <p>Your Shield Against Financial Crime</p>
+        <a href="#join" class="cta-button">Join the Fight</a>
+    </div>
+    
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Stopping Financial Crime, One Step at a Time</h2>
+        <p>We’re dedicated to protecting the financial world with cutting-edge AML solutions. Partner with us to safeguard your assets and combat illicit activities.</p>
+        <div class="buttons">
+            <a href="#learn" class="button">Learn More</a>
+            <a href="#contact" class="button">Contact Us</a>
         </div>
-        
-        <a href="#learn" class="button">Learn More</a>
-        <a href="#join" class="button">Join the Fight</a>
-        <a href="#contact" class="button">Contact Us</a>
     </div>
 </body>
 </html>
