@@ -10,14 +10,13 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #1a1a1a; /* Black background */
-            color: #ffffff; /* White text for contrast */
+            color: #ffffff; /* White text */
         }
         /* Hero Section */
         .hero {
-            background-color: #ff3333; /* Red background */
             text-align: center;
             padding: 100px 20px;
-            position: relative;
+            background-color: #1a1a1a; /* Matches body, no red */
         }
         .hero img {
             max-width: 100%;
@@ -26,17 +25,17 @@
         }
         .hero h1 {
             font-size: 48px;
-            color: #ffffff; /* White text */
+            color: #ff3333; /* Red title */
             margin: 0;
         }
         .hero p {
             font-size: 24px;
-            color: #1a1a1a; /* Black subtext */
+            color: #ffffff; /* White subtext */
             margin: 10px 0 20px;
         }
         .hero .cta-button {
-            background-color: #1a1a1a; /* Black button */
-            color: #ff3333; /* Red text */
+            background-color: #ff3333; /* Red button */
+            color: #ffffff; /* White text */
             padding: 15px 40px;
             border: 2px solid #ffffff; /* White border */
             border-radius: 5px;
@@ -45,42 +44,78 @@
             display: inline-block;
         }
         .hero .cta-button:hover {
-            background-color: #ffffff; /* White on hover */
-            color: #ff3333; /* Red text */
+            background-color: #cc0000; /* Darker red */
+            color: #ffffff;
         }
-        /* Content Section */
-        .content {
+        /* Solutions Section */
+        .solutions {
             padding: 50px 20px;
             text-align: center;
+            background-color: #ffffff; /* White for contrast */
+            color: #1a1a1a; /* Black text */
         }
-        .content h2 {
+        .solutions h2 {
             font-size: 32px;
             color: #ff3333; /* Red heading */
             margin-bottom: 20px;
         }
-        .content p {
+        .solutions p {
             font-size: 18px;
             max-width: 800px;
             margin: 0 auto 30px;
         }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+        /* Why Us Section */
+        .why-us {
+            padding: 50px 20px;
+            text-align: center;
         }
-        .content .button {
-            background-color: #ff3333; /* Red buttons */
+        .why-us h2 {
+            font-size: 32px;
+            color: #ff3333; /* Red heading */
+            margin-bottom: 20px;
+        }
+        .why-us p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ff3333; /* Red background */
             color: #ffffff; /* White text */
-            padding: 15px 30px;
+        }
+        .contact h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #1a1a1a; /* Black input bg */
+            color: #ffffff; /* White text */
+        }
+        .contact button {
+            background-color: #1a1a1a; /* Black button */
+            color: #ff3333; /* Red text */
+            padding: 15px 40px;
             border: none;
             border-radius: 5px;
             font-size: 18px;
-            text-decoration: none;
-            display: inline-block;
+            cursor: pointer;
         }
-        .content .button:hover {
-            background-color: #cc0000; /* Darker red on hover */
+        .contact button:hover {
+            background-color: #ffffff; /* White on hover */
+            color: #ff3333;
         }
     </style>
 </head>
@@ -93,14 +128,27 @@
         <a href="#join" class="cta-button">Join the Fight</a>
     </div>
     
-    <!-- Content Section -->
-    <div class="content">
-        <h2>Stopping Financial Crime, One Step at a Time</h2>
-        <p>We’re dedicated to protecting the financial world with cutting-edge AML solutions. Partner with us to safeguard your assets and combat illicit activities.</p>
-        <div class="buttons">
-            <a href="#learn" class="button">Learn More</a>
-            <a href="#contact" class="button">Contact Us</a>
-        </div>
+    <!-- Solutions Section -->
+    <div class="solutions">
+        <h2>Our AML Solutions</h2>
+        <p>We provide advanced tools and strategies to detect, prevent, and report financial crimes, ensuring your institution stays compliant and secure.</p>
+    </div>
+    
+    <!-- Why Us Section -->
+    <div class="why-us">
+        <h2>Why Choose AML Force?</h2>
+        <p>With years of expertise and a passion for justice, we deliver tailored solutions that protect your assets and uphold integrity in the financial world.</p>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </body>
 </html>
